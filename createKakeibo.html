@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset = "utf-8">
+	<title>家計簿を登録する♫</title>
+	<script src="main.js"></script>
+</head>
+<body>
+	<h1>家計簿を登録します</h1>
+    <form action='http://localhost/kakeibo/createKakeibo.php' method='GET'>
+    	<!-- 日付 
+    	日付<input type='date' name='date'><br>
+        -->
+    	<!-- 分類 
+    	用途<input type='text' name='type'><br>
+        -->
+        用途：<select name='type'>
+        	<option value='' selected></option>
+        	<option value='日用品'>日用品</option>
+        	<option value='食費'>食費</option>
+        	<option value='趣味・娯楽'>趣味・娯楽</option>
+        	<option value='衣服・美容'>衣服・美容</option>
+        	<option value='健康・医療'>健康・医療</option>
+        	<option value='交通費'>交通費</option>
+        	<option value='交際費'>交際費</option>
+        	<option value='その他'>その他</option>
+        </select><br>
+    	<!-- 値段 -->
+    	値段：<input type='number' name='price'><br>
+    	<input type='submit' value='登録'>
+    </form><br>
+
+    <a href="menu.html">メニュー</a>
+</body>
+</html>
